@@ -234,9 +234,9 @@ function terrasPokemon(pokemon) {
 
 
 
-const chooseBulbasaur = axios.get("http://fizal.me/pokeapi/api/1.json");
-const chooseCyndaquil = axios.get("http://fizal.me/pokeapi/api/155.json");
-const chooseLarvitar = axios.get("http://fizal.me/pokeapi/api/246.json");
+const chooseBulbasaur = axios.get("https://pokeapi.co/api/v2/pokemon/1/");
+const chooseCyndaquil = axios.get("https://pokeapi.co/api/v2/pokemon/155/");
+const chooseLarvitar = axios.get("https://pokeapi.co/api/v2/pokemon/246/");
 
 axios.all([chooseBulbasaur, chooseCyndaquil, chooseLarvitar])
 
@@ -345,6 +345,7 @@ console.log(pokeball);
 console.log(terra);
 
 console.log(terra.get("bulbasaur"));
+
 
 
 }).catch((error) => {
