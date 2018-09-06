@@ -121,6 +121,10 @@ this.hometown = hometown;
 this.pokemon = [];
 }
 
+all() {
+  return this.pokemon
+}
+
 add(pokemon) {
 this.pokemon.push(pokemon)
 }
